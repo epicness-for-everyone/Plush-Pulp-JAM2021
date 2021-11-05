@@ -70,7 +70,7 @@ public class ctrCritter : MonoBehaviour
         }
     }
     public void Atack(){
-        ani.SetBool("atack", true);
+        ani.SetBool("attack", true);
         Flip(dir.x);
         moveObj.x= dir.x * (vel * 3f);
         moveObj.y-= gravedad * Time.deltaTime;
@@ -92,7 +92,7 @@ public class ctrCritter : MonoBehaviour
     IEnumerator offAtack(){
         yield return new WaitForSeconds(3f);
         estado= Estados.Pasivo;
-        ani.SetBool("atack", false);
+        ani.SetBool("attack", false);
     }
     private void OnDrawGizmos() {
         Gizmos.color= Color.red;
