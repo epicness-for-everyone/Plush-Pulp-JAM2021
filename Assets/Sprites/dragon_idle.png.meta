@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: b2f0f60e7372d174b8546656436a7b1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2666869793707203082
+    second: dragon_idle_0
+  - first:
+      213: 5327224637721120636
+    second: dragon_idle_1
+  - first:
+      213: -387309887277073560
+    second: dragon_idle_2
+  - first:
+      213: -1924840689282026773
+    second: dragon_idle_3
+  - first:
+      213: -339236567196529483
+    second: dragon_idle_4
+  - first:
+      213: 7547715729703178702
+    second: dragon_idle_5
+  - first:
+      213: -6620253129711929813
+    second: dragon_idle_6
+  - first:
+      213: -2844733817419759603
+    second: dragon_idle_7
+  - first:
+      213: 5172233272529421974
+    second: dragon_idle_8
+  - first:
+      213: 8305778065701632023
+    second: dragon_idle_9
+  - first:
+      213: 4380207693833079876
+    second: dragon_idle_10
+  - first:
+      213: 4374375484689209098
+    second: dragon_idle_11
+  - first:
+      213: 8803927307315041023
+    second: dragon_idle_12
+  - first:
+      213: -5366684304927831553
+    second: dragon_idle_13
+  - first:
+      213: 352567409044113872
+    second: dragon_idle_14
+  - first:
+      213: -8007952356418277068
+    second: dragon_idle_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragon_idle_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2308
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a132c92ff920520800000000000000
+      internalID: 2666869793707203082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_1
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 2308
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f831a459a1ee940800000000000000
+      internalID: 5327224637721120636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 2308
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b7ad6a5bfff9af0800000000000000
+      internalID: -387309887277073560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_3
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 2308
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2702267979945e0800000000000000
+      internalID: -1924840689282026773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1588
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc8d65b32aca4bf0800000000000000
+      internalID: -339236567196529483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_5
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1588
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec11696777fdeb860800000000000000
+      internalID: 7547715729703178702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_6
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1588
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b263a58aad22024a0800000000000000
+      internalID: -6620253129711929813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_7
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 1588
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0087244aa97588d0800000000000000
+      internalID: -2844733817419759603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_8
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 868
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6968298f1c677c740800000000000000
+      internalID: 5172233272529421974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_9
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 868
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7187065152d044370800000000000000
+      internalID: 8305778065701632023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 868
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c8a51b0bf99cc30800000000000000
+      internalID: 4380207693833079876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_11
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 868
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07d31fa357e4bc30800000000000000
+      internalID: 4374375484689209098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 148
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2dfd4ad35dd2a70800000000000000
+      internalID: 8803927307315041023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_13
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 148
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9cc1ffe05b585b0800000000000000
+      internalID: -5366684304927831553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_14
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 148
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d94477c03294e400800000000000000
+      internalID: 352567409044113872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_idle_15
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 148
+        width: 619
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431bf6182c90ed090800000000000000
+      internalID: -8007952356418277068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f4d6b919eae2a824bb4585fc82efa5ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
