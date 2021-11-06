@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: b334bb29fd76ce740bfc249785921154
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1019919407728195819
+    second: fund_0
+  - first:
+      213: -1662058669061130822
+    second: fund_1
+  - first:
+      213: 1107234821006797537
+    second: fund_2
+  - first:
+      213: 2911104222177823272
+    second: fund_3
+  - first:
+      213: 6515574208940856597
+    second: fund_4
+  - first:
+      213: -6605706698954674228
+    second: fund_5
+  - first:
+      213: -8999347479889527544
+    second: fund_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +62,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,11 +122,158 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: fund_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 423
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be87a2d2c4b772e00800000000000000
+      internalID: 1019919407728195819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fund_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 4800
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5b0ca427e2fe8e0800000000000000
+      internalID: -1662058669061130822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fund_2
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 0
+        width: 905
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaad0d0430bd5f00800000000000000
+      internalID: 1107234821006797537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fund_3
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 0
+        width: 112
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a8c0bcdd1566820800000000000000
+      internalID: 2911104222177823272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fund_4
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 0
+        width: 516
+        height: 1082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515dd97d838fb6a50800000000000000
+      internalID: 6515574208940856597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fund_5
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 0
+        width: 2077
+        height: 1188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf636e71c0d354a0800000000000000
+      internalID: -6605706698954674228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fund_6
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 0
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80db0eac525eb1380800000000000000
+      internalID: -8999347479889527544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8332fe53fecb03147a03408cf089323a
     internalID: 0
     vertices: []
     indices: 
