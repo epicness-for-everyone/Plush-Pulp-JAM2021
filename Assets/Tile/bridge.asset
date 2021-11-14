@@ -18,6 +18,8 @@ MonoBehaviour:
     m_Order: 0
     m_Sprites:
     - {fileID: -7189432014358526074, guid: dfcafa613647f5b4db54c3fadc338321, type: 3}
+    - {fileID: -6265054668056534801, guid: dfcafa613647f5b4db54c3fadc338321, type: 3}
+    - {fileID: -8818591403317373605, guid: dfcafa613647f5b4db54c3fadc338321, type: 3}
   m_FillTexture: {fileID: 0}
   m_CornerSprites:
   - m_CornerType: 0
@@ -34,10 +36,10 @@ MonoBehaviour:
     - {fileID: 0}
   - m_CornerType: 4
     m_Sprites:
-    - {fileID: 0}
+    - {fileID: -6265054668056534801, guid: dfcafa613647f5b4db54c3fadc338321, type: 3}
   - m_CornerType: 5
     m_Sprites:
-    - {fileID: 0}
+    - {fileID: -8818591403317373605, guid: dfcafa613647f5b4db54c3fadc338321, type: 3}
   - m_CornerType: 6
     m_Sprites:
     - {fileID: 0}
