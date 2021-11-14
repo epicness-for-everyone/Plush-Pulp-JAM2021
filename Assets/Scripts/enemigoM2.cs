@@ -24,7 +24,7 @@ public class enemigoM2 : MonoBehaviour
     void Start()
     {
         ani = GetComponent<Animator>();
-        target = GameObject.Find("Player");    //nombre del jugador
+        target = GameObject.Find("knight_attack_0");    //nombre del jugador
 
         obj = GameObject.FindGameObjectWithTag("tDragon");
     }
@@ -36,17 +36,17 @@ public class enemigoM2 : MonoBehaviour
     {
         ani.SetBool("atack", false);
         atacando = false;
-        rango.GetComponent<BoxCollider2D>().enabled = true;
+        rango.GetComponent<BoxCollider>().enabled = true;
     }
     public void colliderWeaponTrue()
     {
-        hit.GetComponent<BoxCollider2D>().enabled = true;
+        hit.GetComponent<BoxCollider>().enabled = true;
     }
     public void colliderWeaponFalse()
     {
-        hit.GetComponent<BoxCollider2D>().enabled = false;
+        hit.GetComponent<BoxCollider>().enabled = false;
     }
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnTriggerEnter(Collider coll)
     {
         if (coll.CompareTag("limIni"))
         {
@@ -59,7 +59,7 @@ public class enemigoM2 : MonoBehaviour
     }
     public void comportamientos()
     {
-        if ((Mathf.Abs(transform.position.x - target.transform.position.x) > rango_vision && !atacando) || (Mathf.Abs(transform.position.y - target.transform.position.y) > rango_vision && !atacando))
+        if ((Mathf.Abs(transform.position.x - target.transform.position.x) > rango_vision && !atacando) || (Mathf.Abs(transform.position.y - target.transform.position.y) > rango_vision && !atacando) || (Mathf.Abs(transform.position.z - target.transform.position.z) > rango_vision && !atacando))
         {
             //ani.SetBool("run", false);
             ani.SetBool("walk", false);
@@ -85,10 +85,12 @@ public class enemigoM2 : MonoBehaviour
                             if (sw == 2)
                             {
                                 transform.rotation = Quaternion.Euler(0, 180, 0);
+                                print("coll1");
                             }
                             else
                             {
                                 transform.rotation = Quaternion.Euler(0, 0, 0);
+                                print("coll1");
                             }
                             transform.Translate(Vector3.right * speedWalk * Time.deltaTime);
                             break;
@@ -96,10 +98,12 @@ public class enemigoM2 : MonoBehaviour
                             if (sw == 1)
                             {
                                 transform.rotation = Quaternion.Euler(0, 0, 0);
+                                print("coll1");
                             }
                             else
                             {
                                 transform.rotation = Quaternion.Euler(0, 180, 0);
+                                print("coll1");
                             }
                             transform.Translate(Vector3.right * speedWalk * Time.deltaTime);
                             break;

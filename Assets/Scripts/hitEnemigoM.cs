@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class hitEnemigoM : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnTriggerEnter(Collider coll)
     {
         if (coll.CompareTag("pm"))
         {

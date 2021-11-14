@@ -6,7 +6,7 @@ public class rangoEnemigoM : MonoBehaviour
 {
     public Animator ani;
     public enemigoM enemigo;
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnTriggerEnter(Collider coll)
     {
         if (coll.CompareTag("pm"))
         {
@@ -14,7 +14,7 @@ public class rangoEnemigoM : MonoBehaviour
             //ani.SetBool("run", false);
             ani.SetBool("atack", true);
             enemigo.atacando = true;
-            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
         }
     }
     void Start()
