@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 9cfe71e20e5e6e34b93089129c18ad83
+guid: dc266d658d1e0a14985d11ec2eba5699
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7152930139536384079
-    second: character_0
+      213: 3402327325672266103
+    second: characterAttackJason2_0
   - first:
-      213: -5725962078152895296
-    second: character_1
+      213: -4353052920692269770
+    second: characterAttackJason2_1
+  - first:
+      213: -4654007630895900995
+    second: characterAttackJason2_2
+  - first:
+      213: 323219432404090424
+    second: characterAttackJason2_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character_0
+      name: characterAttackJason2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 720
-        width: 660
-        height: 705
+        x: 18
+        y: 810
+        width: 612
+        height: 612
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4060466010544360800000000000000
-      internalID: 7152930139536384079
+      spriteID: 779dc482dae773f20800000000000000
+      internalID: 3402327325672266103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_1
+      name: characterAttackJason2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 660
-        height: 720
+        x: 691
+        y: 810
+        width: 731
+        height: 576
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +150,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4d65ec3db4980b0800000000000000
-      internalID: -5725962078152895296
+      spriteID: 63d19ad9e69d693c0800000000000000
+      internalID: -4353052920692269770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterAttackJason2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 715
+        height: 540
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db61e7ab7b4a96fb0800000000000000
+      internalID: -4654007630895900995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterAttackJason2_4
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 90
+        width: 456
+        height: 558
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ef2fc7c5e4c7400800000000000000
+      internalID: 323219432404090424
       vertices: []
       indices: 
       edges: []
@@ -153,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a2a576d0d2044ad4babe3d2d39508c13
+    spriteID: 98c2946a621e67644a17f7d5858c0608
     internalID: 0
     vertices: []
     indices: 

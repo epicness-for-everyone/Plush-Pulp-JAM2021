@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 9cfe71e20e5e6e34b93089129c18ad83
+guid: 914207eb6e675224cb236c4667ff5098
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7152930139536384079
-    second: character_0
+      213: -8385657659958558343
+    second: characterWalkTerminator2_0
   - first:
-      213: -5725962078152895296
-    second: character_1
+      213: 6814251494252309107
+    second: characterWalkTerminator2_1
+  - first:
+      213: 3357647569622026682
+    second: characterWalkTerminator2_2
+  - first:
+      213: 1173417619469875689
+    second: characterWalkTerminator2_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character_0
+      name: characterWalkTerminator2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 720
-        width: 660
-        height: 705
+        x: 162
+        y: 810
+        width: 540
+        height: 558
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4060466010544360800000000000000
-      internalID: 7152930139536384079
+      spriteID: 971032299c820ab80800000000000000
+      internalID: -8385657659958558343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_1
+      name: characterWalkTerminator2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 660
-        height: 720
+        x: 882
+        y: 810
+        width: 540
+        height: 558
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +150,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4d65ec3db4980b0800000000000000
-      internalID: -5725962078152895296
+      spriteID: 37a651d61a5119e50800000000000000
+      internalID: 6814251494252309107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterWalkTerminator2_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 90
+        width: 540
+        height: 558
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9464ccca2c89e20800000000000000
+      internalID: 3357647569622026682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterWalkTerminator2_3
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 90
+        width: 540
+        height: 558
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9bfad9b11d84010800000000000000
+      internalID: 1173417619469875689
       vertices: []
       indices: 
       edges: []
@@ -153,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a2a576d0d2044ad4babe3d2d39508c13
+    spriteID: 7e180f2ec2eaf5143b24129aa4931b22
     internalID: 0
     vertices: []
     indices: 
