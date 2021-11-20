@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - ctrMuro
-<<<<<<< HEAD
-  - Change
-=======
-  - Ground
->>>>>>> 3dd77a9efca7374a2d07ec166b6da413d760984f
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -22,8 +16,8 @@ TagManager:
   - 
   - 
   - 
-  - InBack
-  - InFront
+  - 
+  - 
   - 
   - 
   - 
