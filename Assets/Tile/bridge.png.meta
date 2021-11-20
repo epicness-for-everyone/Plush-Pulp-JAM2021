@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dfcafa613647f5b4db54c3fadc338321
+guid: 2b5a28ce8149df542b9442f56bb7c653
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -8,18 +8,6 @@ TextureImporter:
   - first:
       213: -376147737124152719
     second: bridge_1
-  - first:
-      213: -8818591403317373605
-    second: bridge_2
-  - first:
-      213: -4879604279965285802
-    second: bridge_3
-  - first:
-      213: 5074979543036475874
-    second: bridge_4
-  - first:
-      213: -7189432014358526074
-    second: bridge_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,13 +112,13 @@ TextureImporter:
       name: bridge_0
       rect:
         serializedVersion: 2
-        x: 105
-        y: 675
-        width: 300
+        x: 15
+        y: 420
+        width: 960
         height: 180
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 60, y: 0, z: 60, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -145,13 +133,13 @@ TextureImporter:
       name: bridge_1
       rect:
         serializedVersion: 2
-        x: 780
-        y: 495
-        width: 135
-        height: 405
+        x: 1425
+        y: 45
+        width: 165
+        height: 870
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 15, z: 0, w: 30}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -162,94 +150,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: bridge_2
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 420
-        width: 300
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5554f177d11e9580800000000000000
-      internalID: -8818591403317373605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bridge_3
-      rect:
-        serializedVersion: 2
-        x: 555
-        y: 45
-        width: 135
-        height: 450
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6528138b2c9284cb0800000000000000
-      internalID: -4879604279965285802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bridge_4
-      rect:
-        serializedVersion: 2
-        x: 765
-        y: 45
-        width: 165
-        height: 435
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e930198103fd6640800000000000000
-      internalID: 5074979543036475874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bridge_5
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 150
-        width: 360
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 687c6579ca10a3c90800000000000000
-      internalID: -7189432014358526074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 466d77cdd133dbc4493a66b3490e0704
+    spriteID: b6ed596782e36ec4d85f3a54bfc70757
     internalID: 0
     vertices: []
     indices: 
