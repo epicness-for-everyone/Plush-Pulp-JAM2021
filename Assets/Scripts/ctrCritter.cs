@@ -4,107 +4,133 @@ using UnityEngine;
 
 public class ctrCritter : MonoBehaviour
 {
-    [Header("Propiedades")]
+    [Header("Variables del Enemigo")]
     private CharacterController cc;
-    public enum Estados {Pasivo, Agresivo};
+    public enum Estados {Pasivo, Pensando, Agresivo, Muerto};
     public Estados estado;
-    public Transform target;
+    [Range(0,10)]public float areaVision;
+    [Range(0,10)][Tooltip("No debe ser menor al área de visión")]public float areaPersecucion;
     public float vel;
+    [Tooltip("Fuerza del salto")]public float impulso;
     public float gravedad;
-    public float salto;
-    [Range(0,10)]public float vision;
-    private SpriteRenderer sr;
+    [Header("Variables de Test")]
+    //Hijo 1
     private Animator ani;
-    [Header("Variables de prueba")]
-    public Vector3 dir;
+    private SpriteRenderer sr;
+    //Hijo 2
+    public GameObject vision;
+    private float posx;
+    //Variables ed uso (?)
+    private int act=1;
+    private float time=10;
+    private float dir= -1;
     private Vector3 moveObj;
-    private bool choque;
-    private float time=10f;
-    private int comp=1;
+    public GameObject target;
+    private bool choque= false;
+    private float waitTime;
     // Start is called before the first frame update
     void Start()
     {
         cc= GetComponent<CharacterController>();
-        sr= transform.GetChild(0).GetComponent<SpriteRenderer>();
         ani= transform.GetChild(0).GetComponent<Animator>();
-        estado= Estados.Pasivo;
-        comp=1;
-        Go();
-        target= GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        sr= transform.GetChild(0).GetComponent<SpriteRenderer>();
+        posx=vision.transform.position.x;
+        if(areaVision > areaPersecucion) areaPersecucion=areaVision;   
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(estado == Estados.Pasivo) Move();
-        if(estado == Estados.Agresivo){ 
-            Atack();
-            if(Vector3.Distance(transform.position, target.position) > vision) StartCoroutine("offAtack");
+        if(estado == Estados.Pasivo) Actividad();
+        if(estado == Estados.Agresivo) onAttack();
+        if(estado == Estados.Pensando) inThink();
+        if(Vector3.Distance(vision.transform.position, target.transform.position) <= areaVision){ 
+            ani.SetBool("attack", true);
+            estado= Estados.Agresivo;
+            waitTime=0;
         }
-        if(Vector3.Distance(transform.position, target.position) <= vision) estado= Estados.Agresivo;
+        if(Vector3.Distance(vision.transform.position, target.transform.position) >= areaPersecucion 
+            && estado== Estados.Agresivo)  estado=Estados.Pensando;            
     }
-    public void Move(){
+    private void Actividad(){
         time+= 1 * Time.deltaTime;
-        if(time >= 5f){
+        if(time >=5f){
+            act=Random.Range(1,3);
             time=0;
-            comp=Random.Range(1,3);
-            if(comp==1) time=2;
+            if(act==1) time=2;
         }
-        switch(comp){
-            case 1: //idle
+        switch(act){
+            case 1:
                 ani.SetBool("walk", false);
-                moveObj.x= 0f;
-                moveObj.y-= gravedad * Time.deltaTime; 
+                cc.Move(Vector3.zero);
+                break;
+            case 2:
+                ani.SetBool("walk", true);
+                moveObj.x= dir * vel;
+                moveObj.y-= gravedad * Time.deltaTime;
                 cc.Move(moveObj * Time.deltaTime);
                 break;
-            case 2: // walk
-                Flip(dir.x);
-                moveObj.x= dir.x * vel;
-                moveObj.y-= gravedad * Time.deltaTime;
-                ani.SetBool("walk", true);
-                cc.Move( moveObj * Time.deltaTime);
-                break;
             default:
-                print("xD");
+                print("xD no deberías de ver esto");
                 break;
         }
     }
-    public void Atack(){
-        ani.SetBool("attack", true);
-        Flip(dir.x);
-        moveObj.x= dir.x * (vel * 3f);
+    private void inThink(){
+        waitTime+= 1 * Time.deltaTime;
+        moveObj.x=dir;
         moveObj.y-= gravedad * Time.deltaTime;
+        if(cc.isGrounded) moveObj= Vector3.zero;
+        cc.Move(moveObj * Time.deltaTime);
+        if(waitTime >= 4f && cc.isGrounded){
+            ani.SetBool("attack", false);
+            ani.SetBool("walk", false);
+            estado= Estados.Pasivo;
+            waitTime= 0;
+        }
+    }
+    private void onAttack(){
+        moveObj.x= dir * vel;
+        moveObj.y-= gravedad * Time.deltaTime;
+        if(cc.isGrounded){
+            moveObj.y=0;
+            dir= obternerDir();
+            Flip(dir);
+        }
         if(choque){
-            moveObj.y= salto * 2f;
-            choque= false;
+            moveObj.y= impulso * 2f;
+            choque = false;
         }
         cc.Move(moveObj * Time.deltaTime);
     }
-    private void OnTriggerEnter(Collider obj){
-        if(obj.tag=="ctrMuro" && estado == Estados.Pasivo){
-            dir.x= dir.x*-1; 
-        }
-        if(obj.tag=="ctrMuro" && estado == Estados.Agresivo){
-            dir.x= dir.x*-1;
-            choque= true;
-        }
+    private void onDeath(){
+        cc.Move(Vector3.zero);
+        ani.SetBool("live", true);
     }
-    IEnumerator offAtack(){
-        yield return new WaitForSeconds(3f);
-        estado= Estados.Pasivo;
-        ani.SetBool("attack", false);
+    private void Flip(float x){
+        if(x>0) transform.localRotation= new Quaternion(0f,180f,0f,0f);
+        if(x<0) transform.localRotation= new Quaternion(0f,0f,0f,0f);
+    }
+    private float obternerDir(){
+        float n;
+        if((target.transform.position.x - transform.position.x)> 0 ) n= 1f;
+        else n= -1f;
+        return n;
+    }
+    private void OnTriggerEnter(Collider obj) {
+        if(obj.tag == "ctrMuro" && estado== Estados.Pasivo){
+            dir=dir*-1;
+            Flip(dir);
+        }
+        if(obj.tag == "ctrMuro" && estado == Estados.Agresivo){
+            dir= dir*-1;
+            choque= true;
+            Flip(dir);
+        }
+        //if(obj.tag == "Player") print("D:! enemigo visto");    
     }
     private void OnDrawGizmos() {
         Gizmos.color= Color.red;
-        Gizmos.DrawWireSphere(transform.position, vision);    
-    }
-    private void Flip(float x){
-        if(x>0) sr.flipX= true;
-        if(x<0) sr.flipX=false;
-    }
-    private void Go(){
-        int m=Random.Range(-1,2);
-        if(m==0) Go();
-        else dir.x=m;
+        Gizmos.DrawWireSphere(vision.transform.position, areaVision);
+        Gizmos.DrawWireSphere(vision.transform.position, areaPersecucion);    
     }
 }

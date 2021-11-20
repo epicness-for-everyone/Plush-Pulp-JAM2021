@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 9cfe71e20e5e6e34b93089129c18ad83
+guid: cc6f26ac0107b5e429c7a2630f171344
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7152930139536384079
-    second: character_0
+      213: -6925095630280116570
+    second: characterWalk2_0
   - first:
-      213: -5725962078152895296
-    second: character_1
+      213: 4087131437327937820
+    second: characterWalk2_1
+  - first:
+      213: 7260192293897886835
+    second: characterWalk2_2
+  - first:
+      213: 5870752069971842260
+    second: characterWalk2_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character_0
+      name: characterWalk2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 720
-        width: 660
-        height: 705
+        x: 54
+        y: 792
+        width: 677
+        height: 432
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4060466010544360800000000000000
-      internalID: 7152930139536384079
+      spriteID: 6a63b89073e15ef90800000000000000
+      internalID: -6925095630280116570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_1
+      name: characterWalk2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 660
-        height: 720
+        x: 810
+        y: 792
+        width: 612
+        height: 468
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +150,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4d65ec3db4980b0800000000000000
-      internalID: -5725962078152895296
+      spriteID: c117340436868b830800000000000000
+      internalID: 4087131437327937820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterWalk2_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 72
+        width: 648
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cdfc6dc6261c460800000000000000
+      internalID: 7260192293897886835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterWalk2_3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 72
+        width: 612
+        height: 468
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d49f0f27e9197150800000000000000
+      internalID: 5870752069971842260
       vertices: []
       indices: 
       edges: []
@@ -153,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a2a576d0d2044ad4babe3d2d39508c13
+    spriteID: c6d3600436423924591faac676c12aaf
     internalID: 0
     vertices: []
     indices: 

@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 9cfe71e20e5e6e34b93089129c18ad83
+guid: 3f94ec4c80401314ea1416c24be2e8f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7152930139536384079
-    second: character_0
+      213: -7495540811808454887
+    second: characterAttackFreddy2_0
   - first:
-      213: -5725962078152895296
-    second: character_1
+      213: -1203925060513960330
+    second: characterAttackFreddy2_2
+  - first:
+      213: 5688465234539685178
+    second: characterAttackFreddy2_3
+  - first:
+      213: -4256041409336700973
+    second: characterAttackFreddy2_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character_0
+      name: characterAttackFreddy2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 720
-        width: 660
-        height: 705
+        x: 90
+        y: 810
+        width: 568
+        height: 576
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4060466010544360800000000000000
-      internalID: 7152930139536384079
+      spriteID: 917c6b0485d7af790800000000000000
+      internalID: -7495540811808454887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_1
+      name: characterAttackFreddy2_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 660
-        height: 720
+        x: 828
+        y: 810
+        width: 522
+        height: 522
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +150,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4d65ec3db4980b0800000000000000
-      internalID: -5725962078152895296
+      spriteID: 67eefdf398cca4fe0800000000000000
+      internalID: -1203925060513960330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterAttackFreddy2_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 90
+        width: 507
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35a5e5fdfc71fe40800000000000000
+      internalID: 5688465234539685178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterAttackFreddy2_4
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 90
+        width: 386
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df022f33e08fe4c0800000000000000
+      internalID: -4256041409336700973
       vertices: []
       indices: 
       edges: []
@@ -153,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a2a576d0d2044ad4babe3d2d39508c13
+    spriteID: 1c5afa020afdda24287d4ad08e36e75b
     internalID: 0
     vertices: []
     indices: 
