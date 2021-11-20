@@ -5,12 +5,12 @@ using UnityEngine;
 public class playerM : MonoBehaviour
 {
     float runSpeed = 8;
-    float jumpSpeed = 16;
-    Rigidbody2D rb2d;
+    float jumpSpeed = 12;
+    Rigidbody rb2d;
 
     float life;
 
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnTriggerEnter(Collider coll)
     {
         if (coll.CompareTag("danio"))
         {
@@ -19,7 +19,7 @@ public class playerM : MonoBehaviour
     }
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody>();
     }
 
 

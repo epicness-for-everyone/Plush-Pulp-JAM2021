@@ -3,10 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Change
   - ctrMuro
   - Buff
+=======
+  tags: []
+>>>>>>> e203e3749314c176241548629ded631830db752b
   layers:
   - Default
   - TransparentFX

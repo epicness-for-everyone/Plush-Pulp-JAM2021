@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 2b5a28ce8149df542b9442f56bb7c653
+guid: 51bfc4e7a10c62149987b10fd7c1fc1b
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -6265054668056534801
-    second: bridge_0
-  - first:
-      213: -376147737124152719
-    second: bridge_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,13 +35,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -107,53 +101,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: bridge_0
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 420
-        width: 960
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 60, y: 0, z: 60, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe0661c19fd0e09a0800000000000000
-      internalID: -6265054668056534801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bridge_1
-      rect:
-        serializedVersion: 2
-        x: 1425
-        y: 45
-        width: 165
-        height: 870
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 15, z: 0, w: 30}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17ad5a140a7a7caf0800000000000000
-      internalID: -376147737124152719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b6ed596782e36ec4d85f3a54bfc70757
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

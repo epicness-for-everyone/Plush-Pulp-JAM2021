@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: d7d906bde2a398245ae7a0450098cb5f
+guid: ac37ae473e8551b45aeea85f5116da67
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2704092346003997867
-    second: window-door_0
+      213: -5033003720072350517
+    second: stoneFlat_0
   - first:
-      213: -4389457404165404242
-    second: window-door_1
+      213: 590625508161558326
+    second: stoneFlat_1
   - first:
-      213: 4480964698103129650
-    second: window-door_2
+      213: 7836343902057978952
+    second: stoneFlat_2
   - first:
-      213: 8527449041761163353
-    second: window-door_3
+      213: -8819824621620261237
+    second: stoneFlat_3
   - first:
-      213: -2698405900291064751
-    second: window-door_4
+      213: 7706907339797484055
+    second: stoneFlat_5
   - first:
-      213: 3675670770964852774
-    second: window-door_5
+      213: -7253432369860404103
+    second: stoneFlat_6
+  - first:
+      213: 6563739268751584007
+    second: stoneFlat_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,127 +124,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: window-door_0
+      name: stoneFlat_0
       rect:
         serializedVersion: 2
-        x: 149
-        y: 869
-        width: 422
-        height: 438
+        x: 0
+        y: 300
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4cb6b69add68520800000000000000
-      internalID: 2704092346003997867
+      spriteID: bc43ed758cd272ab0800000000000000
+      internalID: -5033003720072350517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: window-door_1
+      name: stoneFlat_1
       rect:
         serializedVersion: 2
-        x: 869
-        y: 869
-        width: 422
-        height: 438
+        x: 152
+        y: 300
+        width: 146
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea9430c4fb38513c0800000000000000
-      internalID: -4389457404165404242
+      spriteID: 637114935c2523800800000000000000
+      internalID: 590625508161558326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: window-door_2
+      name: stoneFlat_2
       rect:
         serializedVersion: 2
-        x: 1589
-        y: 869
-        width: 422
-        height: 438
+        x: 300
+        y: 300
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 236a089d6a59f2e30800000000000000
-      internalID: 4480964698103129650
+      spriteID: 84cd6fb924940cc60800000000000000
+      internalID: 7836343902057978952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: window-door_3
+      name: stoneFlat_3
       rect:
         serializedVersion: 2
-        x: 104
-        y: 14
-        width: 482
-        height: 677
+        x: 0
+        y: 150
+        width: 148
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9585b6e19b5975670800000000000000
-      internalID: 8527449041761163353
+      spriteID: b8e841f6c30b99580800000000000000
+      internalID: -8819824621620261237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: window-door_4
+      name: stoneFlat_5
       rect:
         serializedVersion: 2
-        x: 824
-        y: 14
-        width: 482
-        height: 677
+        x: 0
+        y: 0
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c355561265d8ad0800000000000000
-      internalID: -2698405900291064751
+      spriteID: 712da71846f64fa60800000000000000
+      internalID: 7706907339797484055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: window-door_5
+      name: stoneFlat_6
       rect:
         serializedVersion: 2
-        x: 1544
-        y: 14
-        width: 483
-        height: 677
+        x: 150
+        y: 0
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62075a6771b920330800000000000000
-      internalID: 3675670770964852774
+      spriteID: 97c9620a0b1a65b90800000000000000
+      internalID: -7253432369860404103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFlat_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b6838b616171b50800000000000000
+      internalID: 6563739268751584007
       vertices: []
       indices: 
       edges: []
@@ -249,7 +273,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: af9a004199c0b7e419dce054ed88aec9
+    spriteID: d182d8cfefa62bf47ab17bfd84f4a2bd
     internalID: 0
     vertices: []
     indices: 

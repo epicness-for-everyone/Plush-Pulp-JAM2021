@@ -5,11 +5,11 @@ using UnityEngine;
 public class checkGroundM : MonoBehaviour
 {
     public static bool isGround;
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         isGround = true;
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit(Collider collision)
     {
         isGround = false;
     }
