@@ -1,7 +1,64 @@
 fileFormatVersion: 2
 guid: 26abc328a6ac8a044a603aa5ff8dbc5f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1923994175756728024
+    second: house_0
+  - first:
+      213: -3211844383458338046
+    second: house_1
+  - first:
+      213: 575601758146719918
+    second: house_2
+  - first:
+      213: 4886921596215672568
+    second: house_6
+  - first:
+      213: -2015168664109823455
+    second: house_9
+  - first:
+      213: -1922597465690043746
+    second: house_12
+  - first:
+      213: -6774112544649857685
+    second: house_13
+  - first:
+      213: -2641059568605796158
+    second: house_14
+  - first:
+      213: -8256488084435607779
+    second: house_15
+  - first:
+      213: -1425630420749943662
+    second: house_16
+  - first:
+      213: -1155424440685516343
+    second: house_17
+  - first:
+      213: -3875703725391605398
+    second: house_24
+  - first:
+      213: 8113068288895388051
+    second: house_27
+  - first:
+      213: -6568140490241397226
+    second: house_30
+  - first:
+      213: 1730938722020219759
+    second: house_31
+  - first:
+      213: 3369446855076228593
+    second: house_32
+  - first:
+      213: 6840981286097152370
+    second: house_33
+  - first:
+      213: -4566365901998973053
+    second: house_34
+  - first:
+      213: -4244695752201314179
+    second: house_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,12 +163,12 @@ TextureImporter:
       name: house_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 750
-        width: 150
-        height: 150
+        x: 1
+        y: 752
+        width: 149
+        height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 15, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -128,11 +185,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 749
+        y: 752
         width: 150
-        height: 150
+        height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,11 +206,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 750
-        width: 150
-        height: 150
+        y: 752
+        width: 149
+        height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 15, w: 0}
       outline: []
       physicsShape: []
@@ -170,11 +227,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
+        y: 602
         width: 150
-        height: 150
+        height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,11 +248,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 450
-        y: 600
+        y: 601
         width: 150
-        height: 150
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +268,12 @@ TextureImporter:
       name: house_12
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 450
-        width: 150
-        height: 150
+        width: 148
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,12 +289,12 @@ TextureImporter:
       name: house_13
       rect:
         serializedVersion: 2
-        x: 150
-        y: 450
-        width: 150
-        height: 150
+        x: 151
+        y: 452
+        width: 148
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,12 +310,12 @@ TextureImporter:
       name: house_14
       rect:
         serializedVersion: 2
-        x: 300
+        x: 301
         y: 450
-        width: 150
-        height: 150
+        width: 149
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,10 +333,10 @@ TextureImporter:
         serializedVersion: 2
         x: 450
         y: 450
-        width: 150
+        width: 148
         height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,7 +357,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,7 +378,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,11 +395,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 150
-        width: 150
-        height: 150
+        y: 152
+        width: 148
+        height: 147
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,12 +415,12 @@ TextureImporter:
       name: house_27
       rect:
         serializedVersion: 2
-        x: 450
-        y: 150
-        width: 150
-        height: 150
+        x: 451
+        y: 151
+        width: 148
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,11 +437,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 150
-        height: 150
+        y: 1
+        width: 148
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,12 +457,12 @@ TextureImporter:
       name: house_31
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 150
-        height: 150
+        x: 152
+        y: 1
+        width: 147
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,12 +478,12 @@ TextureImporter:
       name: house_32
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 150
-        height: 150
+        x: 302
+        y: 1
+        width: 147
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -447,7 +504,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -468,7 +525,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -489,7 +546,7 @@ TextureImporter:
         width: 150
         height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -504,7 +561,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a0e1b8ba5d17ef0449b56dde0fdaaa7a
+    spriteID: 188c33ac7bb42e14f9b0f498b6c3d444
     internalID: 0
     vertices: []
     indices: 

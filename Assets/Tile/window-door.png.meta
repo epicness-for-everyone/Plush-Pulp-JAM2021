@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 91e931d4b27fa9148a3c5402f82eef1c
+guid: d7d906bde2a398245ae7a0450098cb5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7841748092480369054
-    second: houseFill_0
+      213: 2704092346003997867
+    second: window-door_0
   - first:
-      213: 5763684515737817040
-    second: houseFill_1
+      213: -4389457404165404242
+    second: window-door_1
   - first:
-      213: -3464308067859209125
-    second: houseFill_2
+      213: 4480964698103129650
+    second: window-door_2
   - first:
-      213: -4998355139615578469
-    second: houseFill_3
+      213: 8527449041761163353
+    second: window-door_3
+  - first:
+      213: -2698405900291064751
+    second: window-door_4
+  - first:
+      213: 3675670770964852774
+    second: window-door_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,8 +53,8 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: houseFill_0
+      name: window-door_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 450
-        width: 450
-        height: 450
+        x: 149
+        y: 869
+        width: 422
+        height: 438
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26e4c9148a38c2390800000000000000
-      internalID: -7841748092480369054
+      spriteID: ba4cb6b69add68520800000000000000
+      internalID: 2704092346003997867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: houseFill_1
+      name: window-door_1
       rect:
         serializedVersion: 2
-        x: 450
-        y: 450
-        width: 450
-        height: 450
+        x: 869
+        y: 869
+        width: 422
+        height: 438
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dfc8fd9788bcff40800000000000000
-      internalID: 5763684515737817040
+      spriteID: ea9430c4fb38513c0800000000000000
+      internalID: -4389457404165404242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: houseFill_2
+      name: window-door_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 450
-        height: 450
+        x: 1589
+        y: 869
+        width: 422
+        height: 438
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b546bbeba2e4cefc0800000000000000
-      internalID: -3464308067859209125
+      spriteID: 236a089d6a59f2e30800000000000000
+      internalID: 4480964698103129650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: houseFill_3
+      name: window-door_3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 0
-        width: 450
-        height: 450
+        x: 104
+        y: 14
+        width: 482
+        height: 677
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +198,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9627f1ab7642aab0800000000000000
-      internalID: -4998355139615578469
+      spriteID: 9585b6e19b5975670800000000000000
+      internalID: 8527449041761163353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: window-door_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 14
+        width: 482
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c355561265d8ad0800000000000000
+      internalID: -2698405900291064751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: window-door_5
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 14
+        width: 483
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62075a6771b920330800000000000000
+      internalID: 3675670770964852774
       vertices: []
       indices: 
       edges: []
@@ -201,7 +249,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d627123cb522dd2488afbaf8873dbc11
+    spriteID: af9a004199c0b7e419dce054ed88aec9
     internalID: 0
     vertices: []
     indices: 
