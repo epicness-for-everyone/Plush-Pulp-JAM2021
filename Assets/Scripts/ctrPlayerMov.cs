@@ -6,11 +6,11 @@ public class ctrPlayerMov : MonoBehaviour
 {
     [Header("Propiedades del personaje")]
     private CharacterController cc;
-    public enum Estados {Normal, Freddy, Jason};
+    public enum Estados {Normal, Jason, Terminator, Freddy};
     public Estados estado;
     public float gravedad;
-    public float vel;
-    public float salto; //fuerza de salto
+    private float vel;
+    private float salto; //fuerza de salto
     [Header("Variables de prueba")]
     public bool ejeZ; //mov por el eje z
     public bool flipDir; //invertir controles
@@ -19,6 +19,7 @@ public class ctrPlayerMov : MonoBehaviour
     private float hm; //AD
     public Vector3 movPlayer;
     private SpriteRenderer sr;
+    private Animator ani;
 
     public bool cambio;
     public Transform lugarCambio;
@@ -29,11 +30,18 @@ public class ctrPlayerMov : MonoBehaviour
         //estado=Estados.Normal;
         cc= GetComponent<CharacterController>();
         sr= transform.GetChild(0).GetComponent<SpriteRenderer>();
+        ani= transform.GetChild(0).GetComponent<Animator>();
+        /// Reset animación
+        ani.SetBool("walk", false);
+        ani.SetBool("jump", false);
+        ani.SetBool("death", false);
+        ani.SetFloat("character", 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        Skin();
         if(cambio) Girar();
         else{ 
             //vm= Input.GetAxis("Vertical");
@@ -45,14 +53,18 @@ public class ctrPlayerMov : MonoBehaviour
     }
     private void Mov(){ //Movimiento
         Direction();
-        if(Input.GetKeyDown(KeyCode.Space) && cc.isGrounded) movPlayer.y=salto; //Salto
+        if(Input.GetKeyDown(KeyCode.Space) && cc.isGrounded){ 
+            movPlayer.y=salto; //Salto
+            ani.SetBool("jump", true);
+        }
         cc.Move(movPlayer * Time.deltaTime);
     }
     private void Direction(){
         dir= hm * vel;
         Flip(dir);
         if(flipDir) dir= dir *-1;
-        
+        if(dir!= 0) ani.SetBool("walk", true);
+        else ani.SetBool("walk", false);
         movPlayer.y-= gravedad * Time.deltaTime;
         if(ejeZ){
             //transform.localRotation= new Quaternion(0f,-90f,0f,90f);
@@ -63,7 +75,10 @@ public class ctrPlayerMov : MonoBehaviour
             movPlayer.x= dir;
             movPlayer.z= 0;
         }
-        if(cc.isGrounded) movPlayer.y=0;
+        if(cc.isGrounded){ 
+            movPlayer.y=0;
+            ani.SetBool("jump", false);
+        }
     }
     private void Flip(float x){ //Voltear sprite
         if(x>0){ 
@@ -99,8 +114,11 @@ public class ctrPlayerMov : MonoBehaviour
                 lugarCambio= null;
         }        
     }
-    private void InChange(){
-
+    private void Skin(){
+        if(estado== Estados.Normal)     ani.SetFloat("character", 0f);
+        if(estado== Estados.Jason)      ani.SetFloat("character", 0.3f);
+        if(estado== Estados.Terminator) ani.SetFloat("character", 0.6f);
+        if(estado== Estados.Freddy)     ani.SetFloat("character", 1f);
     }
     //Colliders
     private void OnTriggerEnter(Collider obj){
@@ -121,5 +139,11 @@ public class ctrPlayerMov : MonoBehaviour
     }
     public void setFlipDir(bool n){
         flipDir= n;
+    }
+    public void setVel(float n){
+        vel= n;
+    }
+    public void setSalto(float n){
+        salto= n;
     }
 }
