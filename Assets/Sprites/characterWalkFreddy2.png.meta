@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 9cfe71e20e5e6e34b93089129c18ad83
+guid: 46880022bde86414aa41b6b01293b04f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7152930139536384079
-    second: character_0
+      213: -2153401979444283404
+    second: characterWalkFreddy2_0
   - first:
-      213: -5725962078152895296
-    second: character_1
+      213: 6548842061013583419
+    second: characterWalkFreddy2_1
+  - first:
+      213: -5089327936364764914
+    second: characterWalkFreddy2_2
+  - first:
+      213: -1690699361597312571
+    second: characterWalkFreddy2_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character_0
+      name: characterWalkFreddy2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 720
-        width: 660
-        height: 705
+        x: 56
+        y: 810
+        width: 628
+        height: 450
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4060466010544360800000000000000
-      internalID: 7152930139536384079
+      spriteID: 4f7b9941f449d12e0800000000000000
+      internalID: -2153401979444283404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_1
+      name: characterWalkFreddy2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 660
-        height: 720
+        x: 789
+        y: 810
+        width: 597
+        height: 432
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +150,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4d65ec3db4980b0800000000000000
-      internalID: -5725962078152895296
+      spriteID: b360ad0482922ea50800000000000000
+      internalID: 6548842061013583419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterWalkFreddy2_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 90
+        width: 566
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01a18fc4331f59b0800000000000000
+      internalID: -5089327936364764914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterWalkFreddy2_3
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 90
+        width: 613
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1330a63ed6988e0800000000000000
+      internalID: -1690699361597312571
       vertices: []
       indices: 
       edges: []
@@ -153,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a2a576d0d2044ad4babe3d2d39508c13
+    spriteID: 9a036cd4fefe7af4faf71d6b06be8c45
     internalID: 0
     vertices: []
     indices: 

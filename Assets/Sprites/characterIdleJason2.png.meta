@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 9cfe71e20e5e6e34b93089129c18ad83
+guid: e49afdc088d20ca409e72ce02aea2dad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7152930139536384079
-    second: character_0
+      213: -8980486955931635344
+    second: characterIdleJason2_0
   - first:
-      213: -5725962078152895296
-    second: character_1
+      213: -827566386280037082
+    second: characterIdleJason2_1
+  - first:
+      213: -7604833051417953836
+    second: characterIdleJason2_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character_0
+      name: characterIdleJason2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 720
-        width: 660
-        height: 705
+        x: 90
+        y: 810
+        width: 684
+        height: 558
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4060466010544360800000000000000
-      internalID: 7152930139536384079
+      spriteID: 0717aa9b1b6ee5380800000000000000
+      internalID: -8980486955931635344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_1
+      name: characterIdleJason2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 660
-        height: 720
+        x: 864
+        y: 810
+        width: 576
+        height: 558
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +147,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4d65ec3db4980b0800000000000000
-      internalID: -5725962078152895296
+      spriteID: 62589bd91c4e384f0800000000000000
+      internalID: -827566386280037082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterIdleJason2_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 90
+        width: 614
+        height: 558
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d93512c1a4367690800000000000000
+      internalID: -7604833051417953836
       vertices: []
       indices: 
       edges: []
@@ -153,7 +177,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a2a576d0d2044ad4babe3d2d39508c13
+    spriteID: 666d8b481bf1d0f49bdae65a789c1842
     internalID: 0
     vertices: []
     indices: 
