@@ -4,42 +4,53 @@ using UnityEngine;
 
 public class PhysicsBossController : MonoBehaviour {
 
-    private bool canJump;
+    public GameObject debriParticles;
+    public GameObject player;
+
+    private GameObject gameCamera;
+
     private bool shaking;
-    private float shakeTime;
+    private float shakeTime, cooldown;
     private Vector3 shakeVector;
 
     // Start is called before the first frame update
     void Start() {
         shakeVector = new Vector3(100f, 0f, 0f);
+        gameCamera = GameObject.FindWithTag("MainCamera");
     }
 
     // Update is called once per frame
     void Update() {
         float delta = Time.deltaTime;
-        Vector2 force = new Vector2(1000f * delta, 0f);
+        Vector2 force = new Vector2(750f * delta, 0f);
 
         HandleMovement(force);
-
-        if (Input.GetKeyDown("space") && canJump) {
-            canJump = false;
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 200f));
-        }
-        if (Input.GetKeyDown("up")) {
-            gameObject.GetComponent<Animator>().SetBool("attacking", true);
-        }
+        HandleAttack();
         HandleShaking(delta);
+
+        cooldown = Mathf.Max(cooldown - delta, 0f);
     }
 
     private void HandleMovement(Vector2 force) {
         if (shaking) {
             return;
         }
-        if (Input.GetKey("left")) {
+        if (player.transform.position.x < transform.position.x) {
             gameObject.GetComponent<Rigidbody2D>().AddForce(-force);
         }
-        if (Input.GetKey("right")) {
+        if (player.transform.position.x > transform.position.x) {
             gameObject.GetComponent<Rigidbody2D>().AddForce(force);
+        }
+    }
+    private void HandleAttack() {
+        if (cooldown != 0f) {
+            return;
+        }
+        float playerX = player.transform.position.x;
+        float bossX = transform.position.x;
+        if (playerX < bossX + 10f && playerX > bossX - 10f) {
+            gameObject.GetComponent<Animator>().SetBool("attacking", true);
+            cooldown = 3f;
         }
     }
 
@@ -55,17 +66,24 @@ public class PhysicsBossController : MonoBehaviour {
         transform.Translate(shakeVector * delta);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.transform.tag == "Ground") {
-            canJump = true;
-        }
-    }
-
     public void StartShaking() {
         shaking = true;
     }
 
     public void StopShaking() {
         shaking = false;
+    }
+
+    public void SpawnParticles() {
+        Vector3 position = transform.position;
+        position.y -= GetComponent<SpriteRenderer>().size.y / 2;
+        GameObject particles = Instantiate(debriParticles, position, new Quaternion());
+        particles.transform.parent = null;
+
+        gameCamera.GetComponent<CameraShake>().Shake();
+    }
+
+    public void SetPlayer(GameObject player) {
+        this.player = player;
     }
 }
