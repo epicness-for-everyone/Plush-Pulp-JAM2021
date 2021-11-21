@@ -8,7 +8,7 @@ public class rangoEnemigoM : MonoBehaviour
     public enemigoM enemigo;
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.CompareTag("pm"))
+        if (coll.CompareTag("Player"))
         {
             ani.SetBool("walk", false);
             //ani.SetBool("run", false);
