@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class ctrCamera : MonoBehaviour
 {
-    [Range(0f,2f)]public float smooth;
+    [Range(0f,1f)]public float smooth;
     public GameObject follow;
     public GameObject Angulos;
-    public Transform[] pos;
     private Vector3 posAct;
     private Vector3 posDest;
     private ctrPlayerMov datosPlayer;
@@ -22,15 +21,10 @@ public class ctrCamera : MonoBehaviour
     void Update()
     {
         posAct= transform.position;
-        posDest= pos[0].position;
-        if(Input.GetKeyDown(KeyCode.P)) Camb();
+        posDest= Angulos.transform.position;
     }
     private void FixedUpdate() {
         transform.rotation= follow.transform.localRotation;
         transform.position= Vector3.Lerp(posAct, posDest, smooth);    
-    }
-    private void Camb(){
-        m++;
-        if(m> pos.Length) m=0;
     }
 }

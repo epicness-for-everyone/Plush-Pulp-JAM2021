@@ -21,9 +21,11 @@ public class ctrPlayerMov : MonoBehaviour
     private SpriteRenderer sr;
     private Animator ani;
 
-    public bool cambio;
-    public Transform lugarCambio;
+    private bool cambio;
+    private Transform lugarCambio;
     private ctrChange ctrChange;
+    //Vista de la camara
+    public GameObject vista;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class ctrPlayerMov : MonoBehaviour
         cc= GetComponent<CharacterController>();
         sr= transform.GetChild(0).GetComponent<SpriteRenderer>();
         ani= transform.GetChild(0).GetComponent<Animator>();
+        vista= transform.GetChild(1).gameObject;
         /// Reset animación
         ani.SetBool("walk", false);
         ani.SetBool("jump", false);
@@ -53,7 +56,7 @@ public class ctrPlayerMov : MonoBehaviour
     }
     private void Mov(){ //Movimiento
         Direction();
-        if(Input.GetKeyDown(KeyCode.Space) && cc.isGrounded){ 
+        if(Input.GetKeyDown(KeyCode.W) && cc.isGrounded){ 
             movPlayer.y=salto; //Salto
             ani.SetBool("jump", true);
         }
