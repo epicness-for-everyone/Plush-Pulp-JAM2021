@@ -24,7 +24,7 @@ public class enemigoM : MonoBehaviour
     void Start()
     {
         ani = GetComponent<Animator>();
-        target = GameObject.Find("knight_attack_0");    //nombre del jugador
+        target = GameObject.Find("Player");    //nombre del jugador
 
         obj = GameObject.FindGameObjectWithTag("tDragon");
     }

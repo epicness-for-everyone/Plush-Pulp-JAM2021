@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class objetoDanioM : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.transform.CompareTag("pm"))
+        if (collision.CompareTag("Player"))
         {
-            Debug.Log("player damaged");
-            //print("dacio");
+            Debug.Log("player damaged");          
             Destroy(collision.gameObject);
         }
     }
