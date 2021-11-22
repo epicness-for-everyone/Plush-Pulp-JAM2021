@@ -13,6 +13,7 @@ public class AttackEnd : StateMachineBehaviour {
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f) {
             animator.SetBool("attacking", false);
+            animator.GetComponent<PhysicsBossController>().SpawnParticles();
         }
     }
 
