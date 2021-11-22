@@ -8455,7 +8455,6 @@ GameObject:
   m_Component:
   - component: {fileID: 250827924}
   - component: {fileID: 250827923}
-  - component: {fileID: 250827927}
   - component: {fileID: 250827926}
   - component: {fileID: 250827925}
   m_Layer: 0
@@ -8557,18 +8556,6 @@ CapsuleCollider:
   m_Height: 9.787661
   m_Direction: 1
   m_Center: {x: 0.18168338, y: -0.0000004361106, z: 0.37607005}
---- !u!114 &250827927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250827922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1d2b11707ac1f409eb4e0b2ca3ba66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &250846107
 GameObject:
   m_ObjectHideFlags: 0
@@ -29905,7 +29892,7 @@ PrefabInstance:
     - target: {fileID: 2519451869429899995, guid: ff66a526d0505734880555fb11f5cd36, type: 3}
       propertyPath: change
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1586300199}
     - target: {fileID: 2519451869429899995, guid: ff66a526d0505734880555fb11f5cd36, type: 3}
       propertyPath: tiempo
       value: 10
