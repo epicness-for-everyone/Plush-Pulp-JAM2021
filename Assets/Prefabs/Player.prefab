@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2519451867983887603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: -4.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2519451869429899992}
@@ -57,7 +57,7 @@ Transform:
   m_GameObject: {fileID: 2519451868334839506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2519451869429899992}
   m_RootOrder: 0
@@ -160,7 +160,7 @@ Transform:
   m_GameObject: {fileID: 2519451869429899999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.79, y: 4.72, z: -15.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 2519451868334839517}
   - {fileID: 2519451867983887602}
@@ -178,13 +178,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.5
-  m_Radius: 0.4
+  m_Height: 3.5
+  m_Radius: 1
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.7, z: 0}
+  m_Center: {x: 0, y: 1.8, z: 0}
 --- !u!114 &2519451869429899998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,12 +199,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   estado: 0
   gravedad: 14
+  vivo: 0
+  vida: 0
   ejeZ: 0
   flipDir: 0
   dir: 0
   movPlayer: {x: 0, y: 0, z: 0}
-  cambio: 0
-  lugarCambio: {fileID: 0}
 --- !u!114 &2519451869429899995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,13 +220,17 @@ MonoBehaviour:
   NormalValues:
   - 10
   - 10
+  - 1
   JasonValues:
   - 5
   - 5
+  - 10
   TerminatorValues:
   - 8
   - 8
+  - 10
   FreddyValues:
   - 15
   - 15
+  - 10
   tiempo: 0

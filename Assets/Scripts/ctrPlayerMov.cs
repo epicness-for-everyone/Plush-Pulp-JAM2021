@@ -9,6 +9,8 @@ public class ctrPlayerMov : MonoBehaviour
     public enum Estados {Normal, Jason, Terminator, Freddy};
     public Estados estado;
     public float gravedad;
+    public bool vivo;
+    public float vida;
     private float vel;
     private float salto; //fuerza de salto
     [Header("Variables de prueba")]
@@ -20,12 +22,12 @@ public class ctrPlayerMov : MonoBehaviour
     public Vector3 movPlayer;
     private SpriteRenderer sr;
     private Animator ani;
-
+    
     private bool cambio;
     private Transform lugarCambio;
     private ctrChange ctrChange;
-    //Vista de la camara
-    public GameObject vista;
+    /// efectos
+    private GameObject efecto;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,26 +35,31 @@ public class ctrPlayerMov : MonoBehaviour
         cc= GetComponent<CharacterController>();
         sr= transform.GetChild(0).GetComponent<SpriteRenderer>();
         ani= transform.GetChild(0).GetComponent<Animator>();
-        vista= transform.GetChild(1).gameObject;
+        
         /// Reset animación
         ani.SetBool("walk", false);
         ani.SetBool("jump", false);
         ani.SetBool("death", false);
         ani.SetFloat("character", 0f);
+        vivo=true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Skin();
-        if(cambio) Girar();
-        else{ 
-            //vm= Input.GetAxis("Vertical");
-            hm= Input.GetAxis("Horizontal");
-            Mov();
-            if(Input.GetKeyDown(KeyCode.R)) ejeZ= !ejeZ;
-            if(Input.GetKeyDown(KeyCode.T)) flipDir= !flipDir;
-        }
+        if(vivo){
+            ani.SetBool("death", false);
+            Skin();
+            if(cambio) Girar();
+            else{ 
+                //vm= Input.GetAxis("Vertical");
+                hm= Input.GetAxis("Horizontal");
+                Mov();
+                if(Input.GetKeyDown(KeyCode.R)) Attack();
+                //if(Input.GetKeyDown(KeyCode.R)) ejeZ= !ejeZ;
+                //if(Input.GetKeyDown(KeyCode.T)) flipDir= !flipDir;
+            }
+        }else Death();
     }
     private void Mov(){ //Movimiento
         Direction();
@@ -123,6 +130,12 @@ public class ctrPlayerMov : MonoBehaviour
         if(estado== Estados.Terminator) ani.SetFloat("character", 0.6f);
         if(estado== Estados.Freddy)     ani.SetFloat("character", 1f);
     }
+    public void Attack(){
+        ani.SetTrigger("attack");
+    }
+    public void Death(){
+        ani.SetBool("death", true);
+    }
     //Colliders
     private void OnTriggerEnter(Collider obj){
         if(obj.tag=="Change" && !cambio){
@@ -148,5 +161,8 @@ public class ctrPlayerMov : MonoBehaviour
     }
     public void setSalto(float n){
         salto= n;
+    }
+    public void setVida(float n){
+        vida= n;
     }
 }
