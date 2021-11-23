@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3790,7 +3790,6 @@ GameObject:
   - component: {fileID: 152383530}
   - component: {fileID: 152383532}
   - component: {fileID: 152383531}
-  - component: {fileID: 152383533}
   m_Layer: 0
   m_Name: house01 (2)
   m_TagString: Untagged
@@ -3955,18 +3954,6 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: 1.4796891, y: 6.38367, z: 0}
     m_Extent: {x: 8.110084, y: 9.110138, z: 0}
---- !u!114 &152383533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152383529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a97e449b11ff3f14ea124fc592409f56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &156550929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7278,7 +7265,6 @@ GameObject:
   - component: {fileID: 371932653}
   - component: {fileID: 371932655}
   - component: {fileID: 371932654}
-  - component: {fileID: 371932656}
   m_Layer: 0
   m_Name: house01 (3)
   m_TagString: Untagged
@@ -7443,18 +7429,6 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: 1.4796891, y: 6.38367, z: 0}
     m_Extent: {x: 8.110084, y: 9.110138, z: 0}
---- !u!114 &371932656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371932652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a97e449b11ff3f14ea124fc592409f56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &372417414
 GameObject:
   m_ObjectHideFlags: 0
@@ -36512,7 +36486,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1797741778}
   - component: {fileID: 1797741780}
-  - component: {fileID: 1797741781}
   - component: {fileID: 1797741779}
   m_Layer: 0
   m_Name: house01
@@ -36688,18 +36661,6 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: -7.8818665, y: 6.382972, z: 0}
     m_Extent: {x: 17.472904, y: 9.119012, z: 0}
---- !u!114 &1797741781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1797741777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a97e449b11ff3f14ea124fc592409f56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1813947520
 GameObject:
   m_ObjectHideFlags: 0
