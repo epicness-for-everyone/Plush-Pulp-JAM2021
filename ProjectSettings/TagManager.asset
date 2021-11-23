@@ -7,6 +7,11 @@ TagManager:
   - Change
   - Buff
   - ctrMuro
+  - limFin
+  - limIni
+  - tDragon
+  - danio
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX

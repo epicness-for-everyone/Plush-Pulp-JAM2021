@@ -28,6 +28,7 @@ public class ctrPlayerMov : MonoBehaviour
     private ctrChange ctrChange;
     /// efectos
     private GameObject efecto;
+    private bool firstTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,13 +36,14 @@ public class ctrPlayerMov : MonoBehaviour
         cc= GetComponent<CharacterController>();
         sr= transform.GetChild(0).GetComponent<SpriteRenderer>();
         ani= transform.GetChild(0).GetComponent<Animator>();
-        
+
         /// Reset animación
         ani.SetBool("walk", false);
         ani.SetBool("jump", false);
         ani.SetBool("death", false);
         ani.SetFloat("character", 0f);
         vivo=true;
+        firstTime=true;
     }
 
     // Update is called once per frame
@@ -56,8 +58,6 @@ public class ctrPlayerMov : MonoBehaviour
                 hm= Input.GetAxis("Horizontal");
                 Mov();
                 if(Input.GetKeyDown(KeyCode.R)) Attack();
-                //if(Input.GetKeyDown(KeyCode.R)) ejeZ= !ejeZ;
-                //if(Input.GetKeyDown(KeyCode.T)) flipDir= !flipDir;
             }
         }else Death();
     }
@@ -101,16 +101,16 @@ public class ctrPlayerMov : MonoBehaviour
     private void Girar(){
         if(!ejeZ && !flipDir) //frente 
             transform.rotation= Quaternion.LookRotation(Vector3.RotateTowards(
-                transform.forward, Vector3.forward, 1f * Time.deltaTime, 0.0f));
+                transform.forward, Vector3.forward, 3f * Time.deltaTime, 0.0f));
         if(ejeZ && flipDir) //izquierda
             transform.rotation= Quaternion.LookRotation(Vector3.RotateTowards(
-                transform.forward, Vector3.right, 1f * Time.deltaTime, 0.0f));
+                transform.forward, Vector3.right, 3f * Time.deltaTime, 0.0f));
         if(!ejeZ && flipDir) //atras
             transform.rotation= Quaternion.LookRotation(Vector3.RotateTowards(
-                transform.forward, Vector3.back, 1f * Time.deltaTime, 0.0f));
+                transform.forward, Vector3.back, 3f * Time.deltaTime, 0.0f));
         if(ejeZ && !flipDir) //derecha
             transform.rotation= Quaternion.LookRotation(Vector3.RotateTowards(
-                transform.forward, Vector3.left, 1f * Time.deltaTime, 0.0f));
+                transform.forward, Vector3.left, 3f * Time.deltaTime, 0.0f));
         
         movPlayer.x= lugarCambio.position.x - transform.position.x;
         movPlayer.y= 0;
@@ -131,10 +131,23 @@ public class ctrPlayerMov : MonoBehaviour
         if(estado== Estados.Freddy)     ani.SetFloat("character", 1f);
     }
     public void Attack(){
-        ani.SetTrigger("attack");
+        if(estado!= Estados.Normal){
+            ani.SetTrigger("attack");
+        }
     }
     public void Death(){
         ani.SetBool("death", true);
+        if(firstTime){
+            movPlayer.y= salto*2;
+            firstTime= false;
+        }else movPlayer.y-= gravedad;
+        if(movPlayer.y <= -200f) cc.Move(Vector3.zero);
+        else if(dir!= 0){
+                cc.Move(new Vector3(-movPlayer.x, movPlayer.y, -movPlayer.z) * Time.deltaTime);
+            }else cc.Move(movPlayer * 1.5f * Time.deltaTime);
+    }
+    public void OnDeath(){
+        vivo= false;
     }
     //Colliders
     private void OnTriggerEnter(Collider obj){
@@ -153,8 +166,14 @@ public class ctrPlayerMov : MonoBehaviour
     public void setEjeZ(bool n){
         ejeZ= n;
     }
+    public bool getEjeZ(){
+        return ejeZ;
+    }
     public void setFlipDir(bool n){
         flipDir= n;
+    }
+    public bool getFlipDir(){
+        return flipDir;
     }
     public void setVel(float n){
         vel= n;
@@ -164,5 +183,8 @@ public class ctrPlayerMov : MonoBehaviour
     }
     public void setVida(float n){
         vida= n;
+    }
+    public float getMovPlayerY(){
+        return movPlayer.y;
     }
 }

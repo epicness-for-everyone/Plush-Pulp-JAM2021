@@ -22,24 +22,32 @@ public class ctrPlayerValues : MonoBehaviour
 
     private SpriteRenderer sp; 
     private string nombBuff;
+
+    //efecto de transformación
+    public Animator humo;
     // Start is called before the first frame update
     void Start()
     {
         ctrPlayer= GetComponent<ctrPlayerMov>();
         ChangeSkin();
         time=0f;
+        humo= transform.GetChild(2).GetComponent<Animator>();
+        humo.enabled=false;
     }
 
     // Update is called once per frame
     void Update(){
         if(ctrPlayer.estado!= ctrPlayerMov.Estados.Normal){
             time+= 1*Time.deltaTime;
-            change.text=(tiempo-time).ToString("f0");
+            Tempura();
             if(time>= tiempo){
+                humo.Play(0,0,0f);
                 ctrPlayer.estado= ctrPlayerMov.Estados.Normal;
+                ChangeSkin();
+                time=0f;
             }
         }
-        if(ctrPlayer.estado == ctrPlayerMov.Estados.Normal) time=0f;
+        if(ctrPlayer.estado == ctrPlayerMov.Estados.Normal) change.text="00:00";
     }
     // 0.Normal 1.Jason 2.Terminator 3.Freddy
     public void ChangeSkin(){
@@ -71,16 +79,21 @@ public class ctrPlayerValues : MonoBehaviour
             default:
                 ctrPlayer.estado= ctrPlayerMov.Estados.Normal;
                 ChangeSkin();
-                print("<-<");
             break;
         }
+    }
+    private void Tempura(){
+        if(tiempo - time >=10f) change.text="00:"+(tiempo - time).ToString("f0");
+        if(tiempo - time <10f)  change.text="00:0"+(tiempo- time).ToString("f0");
     }
     //Colliders
     private void OnTriggerEnter(Collider obj){
         if(obj.tag=="Buff"){
+            humo.enabled=true;
             sp= obj.GetComponent<SpriteRenderer>();
             if(ctrPlayer.estado == ctrPlayerMov.Estados.Normal){
                 nombBuff= sp.sprite.name;
+                humo.Play(0,0,0f);
                 switch(nombBuff){
                     case "buffs_0": //Jason
                         ctrPlayer.estado= ctrPlayerMov.Estados.Jason;
