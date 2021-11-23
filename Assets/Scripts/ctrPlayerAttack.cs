@@ -34,7 +34,7 @@ public class ctrPlayerAttack : MonoBehaviour
     }
     public void Shoot(){
         bullet= Instantiate(Bullet, 
-                new Vector3(hit.transform.position.x, hit.transform.position.y+0.67f, hit.transform.position.z), 
+                new Vector3(hit.transform.position.x, hit.transform.position.y+2.3f, hit.transform.position.z), 
                 transform.rotation);
         ctrBullet= bullet.GetComponent<ctrPlayerBullet>();
         ctrBullet.setOrientation(ctrPlayer.getEjeZ());

@@ -50,6 +50,7 @@ public class ctrPlayerMov : MonoBehaviour
     void Update()
     {
         if(vivo){
+            firstTime=true;
             ani.SetBool("death", false);
             Skin();
             if(cambio) Girar();
@@ -101,21 +102,21 @@ public class ctrPlayerMov : MonoBehaviour
     private void Girar(){
         if(!ejeZ && !flipDir) //frente 
             transform.rotation= Quaternion.LookRotation(Vector3.RotateTowards(
-                transform.forward, Vector3.forward, 3f * Time.deltaTime, 0.0f));
+                transform.forward, Vector3.forward, 2f * Time.deltaTime, 0.0f));
         if(ejeZ && flipDir) //izquierda
             transform.rotation= Quaternion.LookRotation(Vector3.RotateTowards(
-                transform.forward, Vector3.right, 3f * Time.deltaTime, 0.0f));
+                transform.forward, Vector3.right, 2f * Time.deltaTime, 0.0f));
         if(!ejeZ && flipDir) //atras
             transform.rotation= Quaternion.LookRotation(Vector3.RotateTowards(
-                transform.forward, Vector3.back, 3f * Time.deltaTime, 0.0f));
+                transform.forward, Vector3.back, 2f * Time.deltaTime, 0.0f));
         if(ejeZ && !flipDir) //derecha
             transform.rotation= Quaternion.LookRotation(Vector3.RotateTowards(
-                transform.forward, Vector3.left, 3f * Time.deltaTime, 0.0f));
+                transform.forward, Vector3.left, 2f * Time.deltaTime, 0.0f));
         
         movPlayer.x= lugarCambio.position.x - transform.position.x;
         movPlayer.y= 0;
         movPlayer.z= lugarCambio.position.z - transform.position.z;
-        cc.Move(movPlayer.normalized * (vel*0.1f) * Time.deltaTime);
+        cc.Move(movPlayer.normalized * (vel*0.2f) * Time.deltaTime);
         //transform.position= Vector3.MoveTowards(transform.position, lugarCambio.position, (vel/5) * Time.deltaTime);
         if(Vector3.Distance(
             new Vector3(transform.position.x, 0f, transform.position.z),
